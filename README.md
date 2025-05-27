@@ -32,14 +32,15 @@ Run from package.json (run with `npm run importmap`):
 
 The following options can be specified, none is required:
 
-Option               |Description
----------------------|------------------------------------------------------------------------------------------------------------------------
-<span style="white-space:nowrap">`-D`, `--dev`</span>         | Include dev dependencies in importmap (default: false)
-<span style="white-space:nowrap">`-S`, `--js`</span>          | Write the importmap as JavaScript instead of JSON (default: false)
-<span style="white-space:nowrap">`-B`, `--base` *PATH*</span> | The base directory where to find the package.json to create an importmap from (default: `.`)
-<span style="white-space:nowrap">`-O`, `--out` *PATH*</span>  | Output path and filename of the importmap (default: `./importmap.json` or `./importmap.js` depending on `--js` option)
-<span style="white-space:nowrap">`-V`, `--version`</span>     | Output the version number
-<span style="white-space:nowrap">`-h`, `--help`</span>        | Display help for command
+Option&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp; | Description
+--|--
+`-D`, `--dev`         | Include dev dependencies in importmap (default: false)
+`-S`, `--js`          | Write the importmap as JavaScript instead of JSON (default: false)
+`-B`, `--base` *PATH* | The base directory where to find the package.json to create an importmap from (default: `.`)
+`-O`, `--out` *PATH*  | Output path and filename of the importmap (default: `./importmap.json` or `./importmap.js` depending on `--js` option)
+`-V`, `--version`     | Output the version number
+`-h`, `--help`        | Display help for command
+
 
 ## JavaScript importmap
 

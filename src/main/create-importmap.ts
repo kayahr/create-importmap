@@ -46,7 +46,7 @@ await writeImportmaps({
 
 // If JS option is set then rewrite import map to JavaScript
 if (options.js) {
-    await writeFile(out, `{
+    await writeFile(out, `(() => {
         const baseUrl = new URL(".", document.currentScript.src).href;
         const prefixUrl = url => url.startsWith(".") ? \`\${baseUrl}\${url}\` : url;
         const prefixUrls = obj => Object.entries(obj).reduce(
@@ -64,5 +64,5 @@ if (options.js) {
         importMap.type = "importmap";
         importMap.textContent = JSON.stringify(prefixUrls(${JSON.stringify(JSON.parse(await readFile(out, "utf-8")), undefined, 4)}));
         document.currentScript.after(importMap);
-    }\n`);
+    })()\n`);
 }

@@ -38,7 +38,8 @@
         "test:unit": "c8 node --test",
         "test:lint": "eslint --max-warnings 0",
         "test:spell": "cspell --no-progress --no-summary",
-        "prepare": "run-s clean build"
+        "prepare": "run-s clean build",
+        "start": "node ./lib/main/create-importmap.js"
     },
     "devDependencies": {
         "@kayahr/eslint-config": "3.5.0",

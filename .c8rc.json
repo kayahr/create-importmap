@@ -1,0 +1,10 @@
+{
+    "reports-dir": "lib/coverage",
+    "all": true,
+    "src": [ "lib/main" ],
+    "clean": true,
+    "reporter": [
+        "text-summary",
+        "html"
+    ]
+}

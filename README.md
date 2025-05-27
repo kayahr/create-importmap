@@ -46,7 +46,7 @@ Option&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp; | D
 
 Currently no browser supports loading an external JSON importmap. That's why `create-importmap` can write a scripted importmap by specifying the `--js` option. The generated importmap script dynamically creates a new inline script tag with the JSON importmap as content so the browser actually loads an inline importmap. The script also does some magic to rebase relative links in the importmap to match the URL from which the script was loaded.
 
-Example usage in HTML (assuming HTML is at `src/demo/test.html` and importmap was generated at `lib/importmap.json`):
+Example usage in HTML (assuming HTML is at `src/demo/test.html` and importmap was generated at `lib/importmap.js`):
 
 
 ```html

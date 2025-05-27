@@ -34,12 +34,12 @@ The following options can be specified, none is required:
 
 Option               |Description
 ---------------------|------------------------------------------------------------------------------------------------------------------------
-  -D, --dev          | Include dev dependencies in importmap (default: false)
-  -S, --js           | Write the importmap as JavaScript instead of JSON (default: false)
-  -B, --base <path>  | The base directory where to find the package.json to create an importmap from (default: ".")
-  -O, --out <path>   | Output path and filename of the importmap (default: "./importmap.json" or "./importmap.js" depending on '--js' option)
-  -V, --version      | Output the version number
-  -h, --help         | Display help for command
+<nobr>`-D`, `--dev`</nobr>       | Include dev dependencies in importmap (default: false)
+<nobr>`-S`, `--js`</nobr>        | Write the importmap as JavaScript instead of JSON (default: false)
+<nobr>`-B`, `--base` *PATH*</nobr> | The base directory where to find the package.json to create an importmap from (default: `.`)
+<nobr>`-O`, `--out` *PATH*</nobr>  | Output path and filename of the importmap (default: `./importmap.json` or `./importmap.js` depending on `--js` option)
+<nobr>`-V`, `--version`</nobr>   | Output the version number
+<nobr>`-h`, `--help`</nobr>      | Display help for command
 
 ## JavaScript importmap
 
